@@ -1,15 +1,25 @@
 (story title)  The Game
 (story author) Indrajith K L
 (story ifid)
-    NCNNNXNN-NNNN-NXNN-NNNN-NNNNNNNNNNNN
+    AFC7894D-4FCE-49C5-A018-ABC364598EC4
 (story blurb) An interactive fiction about the legendary 'DD the Destroyer'
 (story release 1)
 (library links enabled)
 (scoring enabled)
 (maximum score 2)
 
+(define resource #coverimage)
+    cover.png; Indrajith K L's The Game
+(style class @center)
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+
 (intro)
     (banner)
+    (if)(interpreter can embed #coverimage)(then)
+            (div @center)(embed resource #coverimage)
+    (endif)
     "You felt a sudden blow to your head."
     (line)
     "Ouch..."
