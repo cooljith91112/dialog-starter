@@ -1,0 +1,4 @@
+stdlib.dg
+*.aastory
+/bin
+/game

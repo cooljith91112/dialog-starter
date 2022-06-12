@@ -1,0 +1,68 @@
+(story title)  The Game
+(story author) Indrajith K L
+(story ifid)
+    NCNNNXNN-NNNN-NXNN-NNNN-NNNNNNNNNNNN
+(story blurb) An interactive fiction about the legendary 'DD the Destroyer'
+(story release 1)
+(library links enabled)
+(scoring enabled)
+(maximum score 2)
+
+(intro)
+    (banner)
+    "You felt a sudden blow to your head."
+    (line)
+    "Ouch..."
+    (line)
+    "You open your eyes"
+    (line)
+    "Is it morning already"
+    (line)
+    "Where am I?"
+    (try [look])
+    (line)
+
+#andrew
+(current player *)
+(* is #in #room)
+
+#room
+(room *)
+(name *) Front Portch
+(look *) You found yourself lying on a familiar grassy front porch
+        (notice #table) %% Binds the word "it" to the table.
+
+%% Rules describing the table:
+#table
+(name *) Wooden table
+(descr *) 
+    It's a sturdy wooden table.
+    (par)
+    (line)
+    You got this table from your late Margareth
+(supporter *)
+(* is #in #room)
+
+%%Rules describing the chair:
+#chair
+(name *) chair
+(dict *) white plain
+(descr *) It's a plastic chair, painted white.
+(appearance *) You notice a conspicuous chair here.
+(on-seat *)
+(* is #in #room)
+
+
+#bottle
+(name *)	red bottle
+(dict *)	crimson decanter
+(descr *) It's a bottle made of glass and have cracks on it.
+(heads *)	bottle decanter
+(* is #in #room)
+
+#cap
+(name *)	red bottle cap
+(heads *)	cap
+(descr *) It's a plastic cap, painted red with a glossy finish.
+(* is #in #room)
+
